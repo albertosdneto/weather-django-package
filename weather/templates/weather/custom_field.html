@@ -1,0 +1,16 @@
+{% load i18n %}
+{% spaceless %}
+  <label class="control-label">{{ label }}</label>
+    <div class="input-group">
+      <div class="input-group-prepend col-auto p-2 align-content-center">
+        {% if audio %}
+            <a title="{% trans "Play CAPTCHA as audio file" %}" href="{{ audio }}">
+        {% endif %}
+        <img src="{{ image }}" alt="captcha" class="captcha" />
+      </div>
+    <div class="col-4 ml-2">
+      {% include "django/forms/widgets/multiwidget.html" %}
+
+    </div>
+    </div>
+{% endspaceless %}
