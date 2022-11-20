@@ -5,6 +5,11 @@ Weather
 Django app moved to package to check the weather using OpenWeatherMap API.
 
 
+Access It
+-----------
+[Link to pythonanywhere.com]
+
+
 Quick start
 -----------
 
@@ -35,3 +40,15 @@ Quick start
    to check if everything is alright (you'll need the Admin app enabled).
 
 6. Visit http://127.0.0.1:8000/weather/ to check the weather for a given city.
+
+
+Resources
+-----------
+
+- [Background Video]
+- [Bootstrap Template]
+
+
+[Background Video]: https://www.pexels.com/video/drone-view-of-big-waves-rushing-to-the-shore-3571264/
+[Bootstrap Template]: https://startbootstrap.com/previews/coming-soon
+[Link to pythonanywhere.com]: https://albertosdneto.pythonanywhere.com/
