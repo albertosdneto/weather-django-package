@@ -2,7 +2,7 @@
 Weather
 =====
 
-Description of the Weather app here.
+Django app moved to package to check the weather using OpenWeatherMap API.
 
 
 Quick start
