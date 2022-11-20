@@ -8,6 +8,11 @@ Django app moved to package to check the weather using OpenWeatherMap API.
 Quick start
 -----------
 
+0. Create a django project and after that use ``pip`` to install this app::
+
+    pip install git+https://github.com/albertosdneto/weather-django-package.git#egg=django-weather
+
+
 1. Add "weather" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
