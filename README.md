@@ -5,7 +5,7 @@ Django app moved to package to check the weather using OpenWeatherMap API.
 
 Access It
 -----------
-[Link to pythonanywhere.com]
+[Link to running example]
 
 
 Quick start
@@ -52,4 +52,4 @@ Resources
 
 [Bootstrap Template]: https://startbootstrap.com/previews/coming-soon
 
-[Link to pythonanywhere.com]: https://albertosdneto.pythonanywhere.com/
+[Link to running example]: https://albertosdneto.pythonanywhere.com/weather/
