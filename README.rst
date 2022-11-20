@@ -4,7 +4,6 @@ Weather
 
 Description of the Weather app here.
 
-Detailed documentation is in the "docs" directory.
 
 Quick start
 -----------
