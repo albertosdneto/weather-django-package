@@ -16,11 +16,12 @@ Quick start
    pip install git+https://github.com/albertosdneto/weather-django-package.git#egg=django-weather
    ```
 
-2. Add "weather" to your INSTALLED_APPS setting like this::
+2. Add ``weather`` and ``captcha`` to your INSTALLED_APPS setting like this::
    ```
    INSTALLED_APPS = [
        ...
        'weather',
+       'captcha',
    ]
    ```
 
@@ -29,9 +30,10 @@ Quick start
    OPEN_WEATHER_API_KEY = "YourKeyHere"
    ```
 
-4. Include the weather URLconf in your project urls.py like this::
+4. Include ``weather`` and ``captcha`` URLconf in your project urls.py like this::
    ```
    path('weather/', include('weather.urls')),
+   path('captcha/', include('captcha.urls')),
    ```
 
 5. Run ``python manage.py migrate`` to create the polls models.
