@@ -5,7 +5,7 @@ Django app moved to package to check the weather using OpenWeatherMap API.
 
 Access It
 -----------
-[Link to running example]
+<a href="https://albertosdneto.pythonanywhere.com/weather/" target="_blank">Link to running example</a>
 
 
 Quick start
@@ -51,5 +51,3 @@ Resources
 [Background Video]: https://www.pexels.com/video/drone-view-of-big-waves-rushing-to-the-shore-3571264/
 
 [Bootstrap Template]: https://startbootstrap.com/previews/coming-soon
-
-[Link to running example]: https://albertosdneto.pythonanywhere.com/weather/
