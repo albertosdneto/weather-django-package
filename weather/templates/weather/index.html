@@ -31,24 +31,15 @@
 <div class="masthead">
     <div class="masthead-content text-white">
         <div class="container-fluid px-4 px-lg-0">
-            <h1 class="fst-italic lh-1 mb-2">{{ city_weather.city }}
-                {% if city_weather.icon is not None %}
-                    <img src="http://openweathermap.com/img/w/{{ city_weather.icon }}.png"/>
-                {% endif %}
-            </h1>
-            {% if city_weather.temperature is not None %}
-                <span>{{ city_weather.temperature|floatformat }} &#8451; ({{ city_weather.description|default_if_none:'-' }})</span>
-            {% else %}
-                No data retrieved yet.
-            {% endif %}
-
-            <p class="mb-5 mt-4">Checkout the current weather for your favorite city:</p>
-
+            <p class="mb-2">Checkout the current weather for your favorite city:</p>
             <form method="POST">
                 {% csrf_token %}
                 <div class="row input-group-newsletter">
                     <div class="col">
-                        {{ form }}
+                        <label for="name">City Name</label>
+                        {{ form.name }}
+                        <label for="captcha_1">Please type the letters in the box:</label>
+                        {{ form.captcha }}
                     </div>
                 </div>
                 <div class="col-auto mt-2">
@@ -60,6 +51,18 @@
                     {{ form.errors }}
                 </div>
             {% endif %}
+            <h1 class="fst-italic lh-1 mt-2 mb-1">{{ city_weather.city }}
+                {% if city_weather.icon is not None %}
+                    <img src="http://openweathermap.com/img/w/{{ city_weather.icon }}.png"/>
+                {% endif %}
+            </h1>
+            {% if city_weather.temperature is not None %}
+                <h1 class="fst-italic lh-1 mb-2">{{ city_weather.temperature|floatformat }} &#8451;</h1>
+                <span>({{ city_weather.description|default_if_none:'-' }})</span>
+            {% else %}
+                No data retrieved yet.
+            {% endif %}
+
         </div>
     </div>
 </div>
@@ -67,8 +70,10 @@
 <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
 <div class="social-icons">
     <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-        <a class="btn btn-dark m-3" href="https://www.linkedin.com/in/albertosdneto/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="btn btn-dark m-3" href="https://github.com/albertosdneto" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="btn btn-dark m-3" href="https://www.linkedin.com/in/albertosdneto/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a class="btn btn-dark m-3" href="https://github.com/albertosdneto" target="_blank"><i
+                class="fab fa-github"></i></a>
         <a class="btn btn-dark m-3" href="https://albertosenna.com" target="_blank"><i class="fa fa-user"></i></a>
     </div>
 </div>
